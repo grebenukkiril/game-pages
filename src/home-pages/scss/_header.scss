@@ -1,0 +1,87 @@
+@import "vars";
+
+.header {
+    background-image: url(../image/bg-image.png);
+    background-repeat: no-repeat;
+    background-position-x: 960px;
+    .header-inner {
+        padding: 36px 0 34px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        .menu {
+        display: flex;
+        gap: 33px;
+            &__list {
+            display: flex;
+            align-items: center;
+            gap: 88px;
+            }
+            &__item{
+                padding: 6.8px 17px;
+                position: relative;
+                transition: color 1s, transform 0.5s;
+                overflow: hidden;
+                &::before{
+                    content: url(../image/header/header-befor.svg);
+                    position: absolute;
+                    transform: translateY(13px) translateX(-56px);
+                    transition: all 0.5s;
+                }
+                &:first-child::before{
+                    content: url(../image/header/header-befor.svg);
+                    position: absolute;
+                    transform: translateY(13px) translateX(-16px);
+                    transition: all 0.5s;
+                }
+                &:hover::before{
+                    position: absolute;
+                    transform: translateY(13px) translateX(-16px);
+                }
+                &:hover{
+                    color: $hoverLinkColor;
+                    transform: scale(1.4);
+                }
+            }
+        }
+    }
+    .chapter-one {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding-bottom: 178px;
+        .main-box {
+            width: 480px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            .subtitle{
+                margin-bottom: 17px;
+            }
+            .title{
+                margin-bottom: 26px;
+            }
+            &__text{
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 200%;
+                margin-bottom: 50px;
+            }
+            &__btn {
+                border-radius: 40px;
+                background: linear-gradient(92deg, #FA8305 2.08%, #FB9E3C 117.25%);
+                padding: 15px 31px;
+                transition: transform 0.5s linear;
+                &:hover{
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+}

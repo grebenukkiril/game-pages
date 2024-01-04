@@ -1,0 +1,64 @@
+@import "vars";
+
+.chapter-one {
+    background-image: url(../image/chapter-one/stray.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 121px;
+    padding-bottom: 113px;
+    margin-bottom: 144px;
+    .main-box {
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        .subtitle{
+            margin-bottom: 17px;
+        }
+        .title{
+            margin-bottom: 26px;
+        }
+        &__text{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 200%;
+            margin-bottom: 50px;
+        }
+        &__btn {
+            border-radius: 40px;
+            background: linear-gradient(92deg, #FA8305 2.08%, #FB9E3C 117.25%);
+            padding: 15px 31px;
+            transition: transform 0.5s linear;
+            &:hover{
+                transform: scale(1.3);
+            }
+        }
+        .subtitle-box {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 208.5%;
+            margin-bottom: 38px;
+            transition: 700ms;
+            &:hover{
+                transform: scale(1.1);
+            }
+            &__link {
+                color: #FFF;
+            }
+            .subtitle-smol{
+                color: #E47500;
+            }
+        }
+    }
+}
