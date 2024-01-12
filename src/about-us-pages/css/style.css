@@ -252,21 +252,6 @@ input {
   transform: translateY(-30px) scale(1.1);
   background-color: #36271d;
 }
-.chapter-two .partner-box__element .decor-link {
-  padding: 7px 25px 6px 24px;
-  border-radius: 8px;
-  background-color: rgba(176, 0, 220, 0.11);
-  transition: all 600ms;
-}
-.chapter-two .partner-box__element .decor-link:hover {
-  transform: scale(1.2) translateX(10px);
-}
-.chapter-two .partner-box__element .decor-link:nth-child(2) {
-  background-color: rgba(220, 66, 0, 0.11);
-}
-.chapter-two .partner-box__element .decor-link:last-child {
-  background-color: rgba(0, 220, 141, 0.11);
-}
 .chapter-two .partner-box__text {
   padding-top: 16px;
 }
@@ -276,6 +261,21 @@ input {
   font-weight: 600;
   line-height: 187.5%;
   margin-top: 19px;
+}
+.chapter-two .decor-link {
+  padding: 7px 25px 6px 24px;
+  border-radius: 8px;
+  background-color: rgba(176, 0, 220, 0.11);
+  transition: all 600ms;
+}
+.chapter-two .decor-link:hover {
+  transform: scale(1.2) translateX(10px);
+}
+.chapter-two .decor-link:nth-child(2) {
+  background-color: rgba(220, 66, 0, 0.11);
+}
+.chapter-two .decor-link:last-child {
+  background-color: rgba(0, 220, 141, 0.11);
 }
 
 .chapter-three {

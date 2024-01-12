@@ -1,10 +1,9 @@
 @import "vars";
 body{
-    color: $whiteColor;
-    background-repeat: no-repeat;
     background: linear-gradient(177deg, #050301 -30.15%, #120A01 92.85%);
     font-family: Poppins;
-    color: #FFF;
+    color: $whiteColor;
+    background-repeat: no-repeat;
 }
 ul{
     list-style-type: none;

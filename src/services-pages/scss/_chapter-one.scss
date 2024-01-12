@@ -1,0 +1,97 @@
+@import "vars";
+
+.chapter-one {
+    margin-bottom: 120px;
+    .information-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 13px;
+        margin-bottom: 45px;
+        &__text {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 187.5%;
+        }
+        .title{
+            font-size: 33px;
+        }
+        .subtitle-box {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 208.5%;
+            margin-bottom: 2px;
+            transition: 700ms;
+            &:hover{
+                transform: scale(1.1);
+            }
+            &__link {
+                color: #FFF;
+            }
+            .subtitle-smol{
+                color: #E47500;
+            }
+        }
+    }
+    .statistics-list {
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+        margin: 0 auto;
+        border-radius: 10px;
+        background: #1C140F;
+        padding: 37px 0;
+        .statistics-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 36px;
+            padding: 72px 0;
+            &:nth-child(2){
+                border: #FFF 3px solid;
+                border-top: none;
+                border-bottom: none;
+            }
+            &__svg-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 70px;
+                background-color: #FFECEC;
+                fill: #DC7000;
+                padding: 15px;
+                transition: transform 700ms, background-color 600ms;
+                &:hover{
+                    transform: rotate(360deg) scale(2);
+                    background-color: #1c140f00;
+                }
+            }
+            &__content-box {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            &__number {
+                font-family: Rubik;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+            }
+            &__text {
+                font-family: Rubik;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import "vars";
+
+.chapter-three {
+    &__box{
+        @include displayFlex;
+    }
+    margin-top: 182px;
+}
+.chapter-four {
+    &__box{
+        @include displayFlex;
+    }
+    margin: 183px 0 189px;
+}
+.chapter-five {
+    &__box{
+        @include displayFlex;
+    }
+    margin-bottom: 168px;
+}
+.content-box {
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: 46px;
+    }
+    &__text:first-child {
+        margin-top: 43px;
+    }
+    &__button {
+        padding: 13px 44px 13px 45px;
+        background-color: #DC7000;
+        transition: all 700ms;
+        &:hover{
+            transform: translateX(5px) translateY(-5px) scale(1.1);
+        }
+    }
+}

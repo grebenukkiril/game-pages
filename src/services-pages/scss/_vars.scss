@@ -5,3 +5,9 @@ $subtitleColor: #E87D0E;
 $hoverLinkColor: #FA9021;
 $howerBtnColor: #d16c00;
 $howerSvgColor: #FA9021;
+@mixin displayFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 138px;
+}

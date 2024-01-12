@@ -1,0 +1,111 @@
+@import "vars";
+
+.swiper-section {
+    background: #1C140F;
+    padding: 88px 0 60px;
+    margin-bottom: 127px;
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    &__text {
+        margin: 20px 0 68px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 187.5%;
+        width: 555px;
+    }
+    &__box-slide {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    &__slide {
+        padding: 30px;
+        border-radius: 10px;
+        border: 2px solid #DDD;
+        transition: all 700ms;
+        &__top-box{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        &:hover{
+            border-radius: 10px;
+            border: 2px solid #DC7000;
+            background: #000000;
+        }
+    }
+    .title{
+        width: 448px;
+    }
+    .user-information {
+        width: 112px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0 108px 0 20px ;
+    }
+    .user-name {
+        font-family: Rubik;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    .user-sity {
+        color: #4F5665;
+        font-family: Rubik;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .rating {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .rating-number {
+        font-family: Rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .review {
+        text-align: left;
+    }
+    .management-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 60px;
+        &__btn-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        &__btn {
+            padding: 12px 15px;
+            background-color: #00000000;
+            border: #DC7000 2px solid;
+            border-radius: 50px;
+            fill: #DC7000;
+            transition: all 700ms;
+            &:hover{
+                background-color: #DC7000;
+                fill: white;
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 @import "vars";
 // about
 .header {
+    margin-bottom: 110px;
     .header-inner {
         padding: 36px 0 34px;  
         display: flex;
@@ -29,7 +30,7 @@
                     transform: translateY(13px) translateX(-56px);
                     transition: all 0.5s;
                 }
-                &:nth-child(2)::before{
+                &:nth-child(3)::before{
                     content: url(../image/header/header-befor.svg);
                     position: absolute;
                     transform: translateY(13px) translateX(-16px);
