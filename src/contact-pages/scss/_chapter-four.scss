@@ -1,0 +1,86 @@
+@import "vars";
+
+.chapter-four {
+    background-image: url(../image/chapter-four/bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 150px;
+    .main-form-box {
+        .main-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &__title {
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 189.5%;
+            }
+            &__text {
+                padding-bottom: 40px;
+            }
+            &__input-list {
+                margin-top: 39px;
+                display: grid;
+                grid-template-rows:87px 87px 87px 87px 87px;
+                grid-template-columns: 322px 322px;
+                gap: 20px 27px;
+            }
+            &__input-item {
+                &:nth-child(3){
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                }
+                &:nth-child(4){
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 3;
+                    grid-row-end: 5;
+                }
+                &:nth-child(5){
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-end;
+                    margin-top: 3px;
+                }
+                &__input-name{
+                    color: #4F4F4F;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 175.4%;
+                    letter-spacing: -0.3px;
+                    padding-bottom: 6px;
+                }
+                &__btn{
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 204.3%;
+                    border-radius: 10px;
+                    background-color: #DC7000;
+                    padding: 10px 47px 10px 48px;
+                    transition: all 700ms;
+                    &:hover{
+                        background-color: #dc7200ab;
+                    }
+                }
+            }
+            &__input {
+                border-radius: 9px;
+                border: 0.6px solid #CECECE;
+                background: rgba(255, 255, 255, 0.07);
+                padding: 10px;
+                width: 100%;
+                &--nth-child-4{
+                    height: 85%;
+                }
+            }
+        }
+    }
+}
